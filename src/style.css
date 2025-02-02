@@ -50,3 +50,7 @@ html {
     background-image: url("photo@2x.png");
   }
 } */
+
+.nav-menu {
+  background-color: coral;
+}
