@@ -1,0 +1,116 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-text {
+  font-weight: 700;
+}
+
+.logo-span {
+  font-style: italic;
+}
+
+.nav-menu {
+  width: 220px;
+  height: 812px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color1);
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-menu.is-open {
+  transform: translateX(0);
+}
+
+.nav-menu > .close-menu {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.close-menu > svg,
+.social-media {
+  stroke: white;
+}
+
+.close-menu > svg:hover,
+.social-media svg:hover {
+  stroke: var(--orange);
+  transition: stroke 150ms ease;
+}
+
+.nav-menu > .nav-list {
+  margin-top: 136px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list .item {
+  color: white;
+}
+
+.nav-list a {
+  position: relative;
+}
+
+.nav-list .item::after {
+  content: "";
+  border: 1px solid var(--orange);
+
+  position: absolute;
+  left: 0;
+  bottom: -40%;
+  width: 30px;
+
+  opacity: 0;
+}
+
+.nav-list .item:hover::after {
+  opacity: 1;
+  transition: opacity 150ms ease;
+}
+
+.nav-list .item:hover {
+  color: var(--orange);
+  transition: color 150ms ease;
+}
+
+.nav-menu > .social-media {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  display: flex;
+  gap: 18px;
+}
+
+.nav-container svg {
+  stroke: #111;
+}
+
+.nav-container svg:hover {
+  stroke: var(--orange);
+
+  transition: stroke 150ms ease;
+}

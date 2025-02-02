@@ -1,0 +1,124 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  --color: #111;
+  --color1: #1e1823;
+  --background: #fafafa;
+  --orange: #fd9222;
+  --hover: #fcf1e0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--background);
+}
+
+nav {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buy-btn,
+.subscribe-btn {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 100px;
+  color: var(--background);
+
+  transition-property: background-color, color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+
+  padding: 12px 20px;
+}
+
+.buy-btn:hover,
+.subscribe-btn:hover {
+  background-color: var(--hover);
+  border: none;
+  color: var(--orange);
+}
+
+.how-btn {
+  border-color: var(--background);
+  border: 1px, solid;
+  border-radius: 100px;
+  color: var(--background);
+
+  padding: 12px 20px;
+
+  transition-property: border, color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.how-btn:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+/* @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
+} */
