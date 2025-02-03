@@ -220,13 +220,13 @@ summary {
   --hover: #fcf1e0;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Montserrat";
-  src: url(b0463f53f41af9e523ee.woff2) format("woff2");
+  src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Montserrat";
@@ -236,13 +236,13 @@ summary {
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Montserrat";
-  src: url(76841f23a1a86cc45dda.woff2) format("woff2");
+  src: url("./assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Montserrat";
@@ -306,7 +306,7 @@ html {
 body {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400;
+  /* font-weight: 400; */
   background-color: var(--background);
 }
 
@@ -398,6 +398,7 @@ section {
 }
 
 .logo-span {
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -449,6 +450,7 @@ section {
 }
 
 .nav-list .item {
+  font-weight: 500;
   color: white;
 }
 
