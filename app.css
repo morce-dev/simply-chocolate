@@ -230,7 +230,7 @@ summary {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(666e9a78e4e3819f55b3.woff2) format("woff2");
+  src: url(fonts/Montserrat-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -246,7 +246,7 @@ summary {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(c4adaa9afbc79b3fc25e.woff2) format("woff2");
+  src: url(fonts/Montserrat-Bold.woff2) format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -254,7 +254,7 @@ summary {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(e3cd69dfb4633a963df4.woff2) format("woff2");
+  src: url(fonts/Montserrat-BoldItalic.woff2) format("woff2");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
