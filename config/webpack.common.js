@@ -14,12 +14,27 @@ module.exports = {
       template: path.resolve(__dirname, "../src/index.html"),
       filename: "index.html",
       inject: "head",
+      scriptLoading: "defer", // Defer JS loading
+      meta: {
+        viewport: "width=device-width, initial-scale=1",
+      },
       link: [
         {
           rel: "preload",
-          // href: "/fonts/my-font.woff2",
           href: "../src/assets/fonts/Montserrat-Bold.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
           href: "../src/assets/fonts/Montserrat-BoldItalic.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
           href: "../src/assets/fonts/Montserrat-Medium.woff2",
           as: "font",
           type: "font/woff2",
