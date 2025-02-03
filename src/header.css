@@ -15,6 +15,7 @@
 }
 
 .logo-span {
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -66,6 +67,7 @@
 }
 
 .nav-list .item {
+  font-weight: 500;
   color: white;
 }
 
