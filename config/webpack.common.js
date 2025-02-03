@@ -13,6 +13,7 @@ module.exports = {
       title: "Simply Chocolate",
       template: path.resolve(__dirname, "../src/index.html"),
       filename: "index.html",
+      inject: "body",
       link: [
         {
           rel: "preload",
