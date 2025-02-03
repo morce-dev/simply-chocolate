@@ -17,7 +17,10 @@ module.exports = {
       link: [
         {
           rel: "preload",
-          href: "/fonts/my-font.woff2",
+          // href: "/fonts/my-font.woff2",
+          href: "../src/assets/fonts/Montserrat-Bold.woff2",
+          href: "../src/assets/fonts/Montserrat-BoldItalic.woff2",
+          href: "../src/assets/fonts/Montserrat-Medium.woff2",
           as: "font",
           type: "font/woff2",
           crossorigin: "anonymous",
