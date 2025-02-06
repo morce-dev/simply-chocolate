@@ -1,6 +1,7 @@
 import "./common.css";
 import "./header.css";
 import "./hero.css";
+import "./advantages.css";
 
 const bodyScrollLock = require("body-scroll-lock");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -10,9 +11,6 @@ const navMenuList = document.querySelector(".nav-mobile .nav-menu-list");
 
 const toggleMenu = () => {
   const isActive = menuToggle.getAttribute("aria-expanded") === "true";
-  console.log("boolean value: ", isActive);
-  const string = "true";
-  console.log("non-boolean value: ", string);
 
   menuToggle.setAttribute("aria-expanded", !isActive);
 
