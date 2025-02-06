@@ -389,7 +389,9 @@ section {
 .header {
   display: flex;
   justify-content: space-between;
-  width: 335px;
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -503,6 +505,10 @@ section {
   stroke: var(--orange);
 }
 
+.section.hero {
+  width: 375px;
+}
+
 .hero-container {
   display: flex;
   align-items: flex-end;
@@ -600,6 +606,53 @@ section {
 
 .span-svg-scroll > svg {
   fill: var(--orange);
+}
+
+.section.advantages {
+  margin-top: 71px;
+  background-color: var(--color1);
+  width: 375px;
+  height: 758px;
+  padding: 20px;
+}
+
+.advantages-container {
+  color: white;
+}
+
+.list-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-content {
+  margin-top: 22px;
+}
+
+.list-advantages .list-title {
+  margin-bottom: 18px;
+}
+
+.advantages-container .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+}
+
+.list-advantages .list-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list-advantages .list-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  letter-spacing: -0.28px;
 }
 
 
