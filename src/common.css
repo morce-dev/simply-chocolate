@@ -8,6 +8,7 @@
   --hover: #fcf1e0;
 }
 
+/* 400 */
 /* @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
@@ -16,6 +17,7 @@
   font-display: swap;
 } */
 
+/* 500 */
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
@@ -24,14 +26,16 @@
   font-display: swap;
 }
 
-/* @font-face {
+/* 600 */
+@font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-} */
+}
 
+/* 700 */
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Bold.woff2") format("woff2");
@@ -40,6 +44,7 @@
   font-display: swap;
 }
 
+/* 700 */
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-BoldItalic.woff2") format("woff2");
@@ -68,19 +73,22 @@ img {
 
 ol,
 ul {
-  list-style-type: none;
   padding: 0;
+
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
+
   color: inherit;
 }
 
 button {
   border: none;
-  background-color: inherit;
   padding: 0;
+
+  background-color: inherit;
 }
 
 button:hover {
@@ -94,7 +102,8 @@ html {
 body {
   font-family: Montserrat;
   font-size: 14px;
-  /* font-weight: 400; */
+  font-weight: 400;
+
   background-color: var(--background);
 }
 
@@ -118,41 +127,37 @@ section {
 
 .buy-btn,
 .subscribe-btn {
-  background-color: var(--orange);
   border: none;
   border-radius: 100px;
+
   color: var(--background);
+  background-color: var(--orange);
 
-  transition-property: background-color, color;
-  transition-duration: 100ms;
-  transition-timing-function: ease-in-out;
-
-  padding: 12px 20px;
+  padding: 12px 28px;
 }
 
 .buy-btn:hover,
 .subscribe-btn:hover {
-  background-color: var(--hover);
   border: none;
+
+  background-color: var(--hover);
   color: var(--orange);
+  transition: background-color 100ms linear, color 100ms linear;
 }
 
 .how-btn {
-  border-color: var(--background);
   border: 1px, solid;
+  padding: 12px 28px;
   border-radius: 100px;
+
   color: var(--background);
-
-  padding: 12px 20px;
-
-  transition-property: border, color;
-  transition-duration: 100ms;
-  transition-timing-function: ease-in-out;
+  border-color: var(--background);
 }
 
 .how-btn:hover {
   color: var(--orange);
   border-color: var(--orange);
+  transition: color 100ms linear, border-color 100ms linear;
 }
 
 /* @media (min-device-pixel-ratio: 2),

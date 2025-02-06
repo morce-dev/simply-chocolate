@@ -1,0 +1,98 @@
+.hero-container {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 335px;
+  height: 621px;
+  padding: 20px;
+  border-radius: 30px;
+
+  background-image: url("./assets/images/chocolate-covered-cocoa-powder.webp");
+  background-size: 335px 621px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url("./assets/images/chocolate-covered-cocoa-powder@2x.webp");
+    background-size: 335px 621px;
+  }
+}
+
+.hero-container > .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 295px;
+}
+
+.hero-container .hero-text {
+  width: 291px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+
+  color: white;
+}
+
+.hero-content .hero-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.hero-buttons > .buy-btn,
+.hero-buttons > .how-btn {
+  font-weight: 600;
+}
+
+.hero-container .scroll-down {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 110px;
+  height: 28px;
+}
+
+.scroll-down {
+  color: white;
+}
+
+.scroll-down:hover > .span-text-scroll:first-child {
+  color: var(--orange);
+  transition: color 100ms linear;
+}
+
+.scroll-down:hover > .span-svg-scroll:nth-child(2) {
+  background-color: var(--orange);
+  transition: background-color 100ms linear;
+}
+
+.scroll-down:hover svg {
+  fill: white;
+  transition: fill 100ms linear;
+}
+
+.scroll-down > .span-text-scroll {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.scroll-down > .span-svg-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+
+  background-color: white;
+}
+
+.span-svg-scroll > svg {
+  fill: var(--orange);
+}
