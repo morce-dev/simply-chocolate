@@ -40,6 +40,13 @@ module.exports = {
           type: "font/woff2",
           crossorigin: "anonymous",
         },
+        {
+          rel: "preload",
+          href: "../src/assets/fonts/Montserrat-SemiBold.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
       ],
     }),
     new CleanWebpackPlugin(),
