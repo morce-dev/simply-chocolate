@@ -221,13 +221,13 @@ summary {
 }
 
 /* 400 */
-/* @font-face {
+@font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url(fonts/Montserrat-Regular.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-} */
+}
 
 /* 500 */
 @font-face {
@@ -487,6 +487,26 @@ section {
   color: var(--orange);
 }
 
+.nav-menu-list .nav-link::after {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  content: "";
+  border: 1px solid var(--orange);
+  width: 30px;
+
+  opacity: 0;
+}
+
+.nav-menu-list .nav-link:hover::after {
+  transition: opacity 100ms linear;
+  opacity: 1;
+}
+
+.nav-menu-list .nav-link {
+  position: relative;
+}
+
 .nav-wrapper > .nav-social-list {
   position: absolute;
   bottom: 20px;
@@ -500,9 +520,14 @@ section {
   stroke: white;
 }
 
-.nav-link:hover {
+.nav-link:hover::after {
   transition: stroke 200ms ease;
   stroke: var(--orange);
+}
+
+.nav-social-list svg:hover {
+  stroke: var(--orange);
+  transition: stroke 100ms linear;
 }
 
 .section.hero {
@@ -612,7 +637,7 @@ section {
   margin-top: 71px;
   background-color: var(--color1);
   width: 375px;
-  height: 718px;
+  height: 758px;
   padding: 20px;
 }
 
@@ -623,7 +648,12 @@ section {
 .list-advantages {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  height: 718px;
+}
+
+.list-advantages > li {
+  padding-right: 28px;
 }
 
 .text-content {
@@ -632,6 +662,10 @@ section {
 
 .list-advantages .list-title {
   margin-bottom: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
 }
 
 .advantages-container .svg-wrapper {
@@ -644,17 +678,80 @@ section {
   height: 62px;
 }
 
-.list-advantages .list-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-
 .list-advantages .list-text {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+
+  line-height: normal;
   letter-spacing: -0.28px;
 }
 
+.section.unique-components {
+  margin-top: 72px;
+}
+
+.unique-components > .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 335px;
+  height: 204px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.unique-components .title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 283px;
+  height: 72px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+}
+
+.unique-components .title-span {
+  color: var(--orange);
+}
+
+.unique-components .text {
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+.unique-components .ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.ingredients > .list-item {
+  border-radius: 15px;
+  width: 335px;
+  height: 270px;
+}
+
+.ingredients > .list-item:first-child {
+  background-color: var(--orange);
+}
+
+.ingredients > .list-item:nth-child(2) {
+  background-color: white;
+}
+
+.ingredients > .list-item:nth-child(3) {
+  background-color: var(--color1);
+}
+
+.ingredients > .list-item:nth-child(4) {
+  background-color: white;
+}
 
 
 /*# sourceMappingURL=app.css.map*/
