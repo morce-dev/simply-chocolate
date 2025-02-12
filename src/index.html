@@ -28,6 +28,20 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      href="fonts/Montserrat-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Montserrat-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -236,6 +250,205 @@
           </ul>
         </div>
       </section>
+      <section class="section unique-components" id="unique-components">
+        <div class="text-content">
+          <h2 class="title">
+            It all adds up to one exceptional
+            <span class="title-span">taste</span> sensation
+          </h2>
+          <p class="text">
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+        </div>
+        <ul class="ingredients">
+          <li class="list-item">
+            <img
+              class="item-img"
+              src="<%= require('./assets/images/milk-chocolate.png') %>"
+              alt="Milk chocolate"
+              loading="lazy"
+            />
+            <p class="item-title">Milk chocolate</p>
+          </li>
+          <li class="list-item">
+            <img
+              class="item-img"
+              src="<%= require('./assets/images/milk.png')%>"
+              alt="Milk"
+            />
+            <p class="item-title">Milk</p>
+          </li>
+          <li class="list-item">
+            <img
+              class="item-img"
+              src="<%= require('./assets/images/nuts.png')%>"
+              alt="Nuts"
+              loading="lazy"
+            />
+            <p class="item-title">Nuts</p>
+          </li>
+          <li class="list-item">
+            <img
+              class="item-img"
+              src="<%= require('./assets/images/semi-sweet-chocolate.png')%>"
+              alt="Semi-sweet chocolate"
+              loading="lazy"
+            />
+            <p class="item-title">Semi-sweet chocolate</p>
+          </li>
+        </ul>
+      </section>
+      <section class="section how-its-made">
+        <h2 class="made-title">How it's <span>made?</span></h2>
+        <div class="video-container">
+          <div class="video-wrapper"></div>
+          <iframe
+            class="video-chocolate"
+            src="https://www.youtube.com/embed/hamUrh8dl7o?si=G3tO61dBH_sU4CIv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="flavor">
+          <h2 class="title-flavor">
+            Try our chocolates today and discover the perfect balance of flavor
+          </h2>
+          <ul class="list-of-steps">
+            <li class="list-item">
+              Heat the milk in a saucepan without bringing it to a boil. Add
+              sugar and cocoa powder.
+            </li>
+            <li class="list-item">
+              At the same time, prepare a water bath. Melt the butter on it.
+            </li>
+            <li class="list-item">
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly
+              with a silicone spatula so that the mass becomes uniform and
+              silky.
+            </li>
+            <li class="list-item">
+              Heat the mixture over low heat, letting it barely boil.
+            </li>
+            <li class="list-item">
+              Pour the chocolate into special containers (can be replaced with
+              ice molds). Allow to cool and harden.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section our-products">
+        <h2 class="title-our-product">
+          Our <span class="span-products">products</span>
+        </h2>
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                src="<%= require('./assets/images/orange.jpg') %>"
+                alt="Orange"
+                loading="lazy"
+              />
+              <p class="item-title">Orange</p>
+              <p class="item-text">Dark chocolate</p>
+              <button class="item-btn" type="button">45 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/apple-cranberry.jpg')%>"
+                alt="Apple&cranberry"
+                loading="lazy"
+              />
+              <p class="item-title">Apple&cranberry</p>
+              <p class="item-text">Milk chocolate</p>
+              <button class="item-btn" type="button">50 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/lime-seasalt.jpg')%>"
+                alt="Lime&sea salt"
+                loading="lazy"
+              />
+              <p class="item-title">Lime&sea salt</p>
+              <p class="item-text">Dark chocolate</p>
+              <button class="item-btn" type="button">66 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/pineapple.jpg')%>"
+                alt="Pineapple"
+                loading="lazy"
+              />
+              <p class="item-title">Pineapple</p>
+              <p class="item-text">Dark chocolate</p>
+              <button class="item-btn" type="button">54 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/classic.jpg')%>"
+                alt="Classic"
+                loading="lazy"
+              />
+              <p class="item-title">Classic</p>
+              <p class="item-text">Milk chocolate</p>
+              <button class="item-btn" type="button">45 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/honey.jpg')%>"
+                alt="Honey"
+                loading="lazy"
+              />
+              <p class="item-title">Honey</p>
+              <p class="item-text">Milk chocolate</p>
+              <button class="item-btn" type="button">50 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/roasted-winterfruits.jpg')%>"
+                alt="Roasted fruits"
+                loading="lazy"
+              />
+              <p class="item-title">Roasted fruits</p>
+              <p class="item-text">Dark chocolate</p>
+              <button class="item-btn" type="button">66 UAH</button>
+            </li>
+            <li class="swiper-slide">
+              <img
+                class="item-img"
+                width="230"
+                src="<%= require('./assets/images/classwhite.jpg')%>"
+                alt="Classic"
+                loading="lazy"
+              />
+              <p class="item-title">Classic</p>
+              <p class="item-text">White chocolate</p>
+              <button class="item-btn" type="button">54 UAH</button>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section></section>
     </main>
     <footer class="footer" id="#footer"></footer>
     <nav class="nav-mobile">

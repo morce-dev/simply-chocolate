@@ -6,16 +6,17 @@
   --background: #fafafa;
   --orange: #fd9222;
   --hover: #fcf1e0;
+  --marker: #4c4c4c;
 }
 
 /* 400 */
-/* @font-face {
+@font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-} */
+}
 
 /* 500 */
 @font-face {

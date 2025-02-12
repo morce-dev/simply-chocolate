@@ -99,6 +99,26 @@
   color: var(--orange);
 }
 
+.nav-menu-list .nav-link::after {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  content: "";
+  border: 1px solid var(--orange);
+  width: 30px;
+
+  opacity: 0;
+}
+
+.nav-menu-list .nav-link:hover::after {
+  transition: opacity 100ms linear;
+  opacity: 1;
+}
+
+.nav-menu-list .nav-link {
+  position: relative;
+}
+
 .nav-wrapper > .nav-social-list {
   position: absolute;
   bottom: 20px;
@@ -112,7 +132,12 @@
   stroke: white;
 }
 
-.nav-link:hover {
+.nav-link:hover::after {
   transition: stroke 200ms ease;
   stroke: var(--orange);
+}
+
+.nav-social-list svg:hover {
+  stroke: var(--orange);
+  transition: stroke 100ms linear;
 }

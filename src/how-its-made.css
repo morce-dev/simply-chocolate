@@ -1,0 +1,87 @@
+.section.how-its-made {
+  width: 375px;
+}
+
+.flavor {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 20px 14px;
+  width: 335px;
+
+  background-color: white;
+}
+
+.title-flavor {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.flavor > .list-of-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+
+  list-style: disc;
+}
+
+.flavor .list-item::marker {
+  color: var(--marker);
+  width: 8px;
+  height: 8px;
+}
+
+.flavor .list-item {
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  /* width: 291px; */
+  margin-left: 16px;
+}
+
+.section.how-its-made .video-chocolate {
+  width: 335px;
+  height: 500px;
+
+  border-radius: 15px;
+}
+
+.section.how-its-made > .video-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.how-its-made > .made-title {
+  text-align: center;
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.made-title > span {
+  color: var(--orange);
+}
+
+.video-container > .video-wrapper {
+  position: absolute;
+  z-index: 1;
+
+  width: 335px;
+  height: 500px;
+
+  background-image: url("./assets/images/how-its-made.webp");
+}
+
+.video-container > .video-wrapper:hover,
+.video-container > .video-wrapper:focus {
+  transition: display 100ms linear;
+  display: none;
+}

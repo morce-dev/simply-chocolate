@@ -2,6 +2,10 @@ import "./common.css";
 import "./header.css";
 import "./hero.css";
 import "./advantages.css";
+import "./unique-components.css";
+import "./how-its-made.css";
+import "./our-products.css";
+import "./swiper.js";
 
 const bodyScrollLock = require("body-scroll-lock");
 const menuToggle = document.querySelector(".menu-toggle");

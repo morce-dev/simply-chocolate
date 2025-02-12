@@ -13,7 +13,12 @@
 .list-advantages {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  height: 718px;
+}
+
+.list-advantages > li {
+  padding-right: 28px;
 }
 
 .text-content {
@@ -22,6 +27,10 @@
 
 .list-advantages .list-title {
   margin-bottom: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
 }
 
 .advantages-container .svg-wrapper {
@@ -34,13 +43,9 @@
   height: 62px;
 }
 
-.list-advantages .list-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-
 .list-advantages .list-text {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+
+  line-height: normal;
   letter-spacing: -0.28px;
 }
