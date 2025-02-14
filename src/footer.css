@@ -1,8 +1,9 @@
 .footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 375px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 440px;
+  width: 375px;
   padding: 32px 20px;
 
   background-color: var(--color1);
@@ -54,11 +55,16 @@
   margin-bottom: 32px;
 }
 
+.nav-footer {
+  position: relative;
+}
+
 .nav-footer > .nav-footer-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-top: 32px;
+  margin-top: 32px;
+  width: 335px;
 }
 
 .nav-footer::before {
