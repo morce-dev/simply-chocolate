@@ -1,0 +1,43 @@
+.section.top-sellers {
+  width: 375px;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-sellers {
+  margin-bottom: 32px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.title-sellers > .span-top {
+  color: var(--orange);
+}
+
+.top-sellers > img {
+  border-radius: 15px;
+}
+
+.top-sellers > p {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  width: 306px;
+
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+.top-sellers > .buy-btn {
+  margin-top: 20px;
+  width: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}

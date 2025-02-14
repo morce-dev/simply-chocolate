@@ -1,0 +1,39 @@
+.section.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 370px;
+  margin-top: 72px;
+
+  background-image: url("./assets/images/subcribe.webp");
+}
+
+.subscribe > .sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 335px;
+  gap: 24px;
+  flex-shrink: 0;
+  margin: 62px;
+}
+
+.sub-container > .subscribe-title {
+  width: 291px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.sub-container > .subscribe-text {
+  width: 326px;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}

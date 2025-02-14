@@ -301,7 +301,7 @@
           </li>
         </ul>
       </section>
-      <section class="section how-its-made">
+      <section class="section how-its-made" id="how-its-made">
         <h2 class="made-title">How it's <span>made?</span></h2>
         <div class="video-container">
           <div class="video-wrapper"></div>
@@ -343,7 +343,7 @@
           </ul>
         </div>
       </section>
-      <section class="section our-products">
+      <section class="section our-products" id="our-products">
         <h2 class="title-our-product">
           Our <span class="span-products">products</span>
         </h2>
@@ -448,9 +448,239 @@
         </div>
         <div class="swiper-pagination"></div>
       </section>
-      <section></section>
+      <section class="section top-sellers" id="top-sellers">
+        <h2 class="title-sellers"><span class="span-top">Top</span> sellers</h2>
+        <img
+          src="<%= require('./assets/images/choco-nut.jpg')%>"
+          alt="chocolate and nut"
+          srcset=""
+          loading="lazy"
+        />
+        <p>
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+        <img
+          src="<%= require('./assets/images/choco-leaf.jpg')%>"
+          alt="chocolate with leaf"
+          srcset=""
+          loading="lazy"
+        />
+        <button class="buy-btn" type="button">Buy now</button>
+      </section>
+      <section class="section reviews" id="reviews">
+        <h2 class="title-review">
+          <span class="span-review">Chocolate</span> is loved
+        </h2>
+        <div class="review-swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/victoria-dobrzhanska.jpg')%>"
+                  alt="Victoria Dobrzhanska"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Victoria Dobrzhanska</p>
+                <p class="text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/nazar-babenko.jpg')%>"
+                  alt="Nazar Babenko"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Nazar Babenko</p>
+                <p class="text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/olena-kampusch.jpg')%>"
+                  alt="Olena Kampusch"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Olena Kampusch</p>
+                <p class="text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/natalie-sus.jpg')%>"
+                  alt="Natalia Sus"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Natalia Sus</p>
+                <p class="text">
+                  The chocolate assortment was delicious. Both dark and milk
+                  chocolate pieces were smooth and just right on the sweetness
+                  level.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/danilo-nottingham.jpg')%>"
+                  alt="Danilo Nottingham"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Danilo Nottingham</p>
+                <p class="text">
+                  This is delicious. It so rich and flavorful you don’t need to
+                  use as many. I love topping an apple with almond butter and
+                  these chips for a snack.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="review-container">
+                <img
+                  src="<%= require('./assets/images/irina-tydnyuk.jpg')%>"
+                  alt="Irina Tydnyuk"
+                  srcset=""
+                  loading="lazy"
+                />
+                <p class="name">Irina Tydnyuk</p>
+                <p class="text">
+                  This is simply the best chocolate around, and I'm just
+                  thrilled to support a local company! Best local chocolate -
+                  world class :)
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="review-swiper-pagination"></div>
+        <button class="review-btn" type="button">Leave a review</button>
+      </section>
+      <section class="section subscribe" id="subscribe">
+        <div class="sub-container">
+          <h2 class="subscribe-title">Explore our new chocolate first</h2>
+          <p class="subscribe-text">
+            From the velvety texture to the rich and complex flavor, our New
+            Chocolate is a true indulgence that will leave you craving more.
+            Made with only the finest ingredients and handcrafted with the
+            utmost care, each piece is a work of art that is sure to please.
+          </p>
+          <button class="subscribe-btn" type="button">Subscribe</button>
+        </div>
+      </section>
     </main>
-    <footer class="footer" id="#footer"></footer>
+    <footer class="footer" id="footer">
+      <h2 class="title-footer">
+        <span class="span-footer">Chocolate</span> a delicious cure for a bad
+        day
+      </h2>
+      <div class="link-footer">
+        <p>Contact us</p>
+        <ul class="footer-special-links">
+          <li class="item-list">
+            <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+          </li>
+          <li class="item-list">
+            <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="footer-social-links">
+          <li class="item-list">
+            <a
+              class="nav-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M15.583 1.833H6.417a4.583 4.583 0 0 0-4.584 4.584v9.166a4.583 4.583 0 0 0 4.584 4.584h9.166a4.583 4.583 0 0 0 4.584-4.584V6.417a4.583 4.583 0 0 0-4.584-4.584Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M14.667 10.422a3.667 3.667 0 1 1-7.255 1.076 3.667 3.667 0 0 1 7.255-1.075Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M14.667 10.422a3.667 3.667 0 1 1-7.255 1.076 3.667 3.667 0 0 1 7.255-1.075ZM16.042 5.958h.01M16.042 5.958h.01"
+                /></svg
+            ></a>
+          </li>
+          <li class="item-list">
+            <a
+              class="nav-link"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M19.167 2.5a9.083 9.083 0 0 1-2.617 1.275 3.733 3.733 0 0 0-6.55 2.5v.833a8.883 8.883 0 0 1-4.224-.945C4.467 5.504 3.342 4.199 2.5 3c0 0-3.333 7.833 4.167 11.167a9.7 9.7 0 0 1-5.834 1.666C8.333 20 17.5 15.833 17.5 6.25c0-.232-.023-.464-.067-.692A6.433 6.433 0 0 0 19.167 2.5Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav-footer">
+        <ul class="nav-footer-list">
+          <li class="nav-footer-item">
+            <a href="#hero">Home</a>
+          </li>
+          <li class="nav-footer-item">
+            <a href="#how-its-made">How it's made?</a>
+          </li>
+          <li class="nav-footer-item">
+            <a href="#our-products">Our products</a>
+          </li>
+          <li class="nav-footer-item">
+            <a href="#top-sellers">Top sellers</a>
+          </li>
+          <li class="nav-footer-item">
+            <a href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     <nav class="nav-mobile">
       <div class="nav-wrapper">
         <button
@@ -491,9 +721,7 @@
             <!-- <a class="nav-link" href="">Top sellers</a> -->
           </li>
           <li class="menu-item">
-            <a class="nav-link" href="#chocolate-is-loved"
-              >Chocolate is loved</a
-            >
+            <a class="nav-link" href="#reviews">Chocolate is loved</a>
             <!-- <a class="nav-link" href="">Chocolate is loved</a> -->
           </li>
         </ul>

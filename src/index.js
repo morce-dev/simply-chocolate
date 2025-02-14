@@ -5,7 +5,10 @@ import "./advantages.css";
 import "./unique-components.css";
 import "./how-its-made.css";
 import "./our-products.css";
-import "./swiper.js";
+import "./top-sellers.css";
+import "./review.css";
+import "./subscribe.css";
+import "./footer.css";
 
 const bodyScrollLock = require("body-scroll-lock");
 const menuToggle = document.querySelector(".menu-toggle");

@@ -1,13 +1,13 @@
 import Swiper from "swiper";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".review-swiper", {
   modules: [Pagination],
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".review-swiper-pagination",
     clickable: true,
   },
 
