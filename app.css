@@ -1146,8 +1146,76 @@ span.swiper-pagination-bullet {
 }
 
 .footer {
+  margin-left: auto;
+  margin-right: auto;
   width: 375px;
   height: 440px;
+  padding: 32px 20px;
+
+  background-color: var(--color1);
+}
+
+.footer > .title-footer {
+  width: 300px;
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.48px;
+}
+
+.title-footer > .span-footer {
+  color: var(--orange);
+}
+
+.footer {
+  color: white;
+}
+
+.footer-social-links a {
+  stroke: white;
+}
+
+.link-footer {
+  position: relative;
+}
+
+.link-footer > p {
+  margin-bottom: 14px;
+}
+
+.link-footer > .footer-social-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  gap: 14px;
+}
+
+.link-footer > .footer-special-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.nav-footer > .nav-footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 32px;
+}
+
+.nav-footer::before {
+  position: absolute;
+
+  width: 100%;
+  height: 0;
+
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
