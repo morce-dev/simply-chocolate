@@ -332,6 +332,10 @@ section {
   margin-right: auto;
 }
 
+footer {
+  max-width: 375px;
+}
+
 .container {
   max-width: 335px;
   margin-left: auto;
@@ -1146,11 +1150,7 @@ span.swiper-pagination-bullet {
 }
 
 .footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 375px;
   height: 440px;
-  padding: 32px 20px;
 
   background-color: var(--color1);
 }
