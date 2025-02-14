@@ -61,9 +61,6 @@
   padding-top: 32px;
 }
 
-.nav-footer {
-}
-
 .nav-footer::before {
   position: absolute;
 
