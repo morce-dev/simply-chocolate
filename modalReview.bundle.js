@@ -1,0 +1,2 @@
+(self.webpackChunksimply_chocolate=self.webpackChunksimply_chocolate||[]).push([[26],{538:()=>{const e=document.querySelector(".close-review-modal"),c=document.querySelector(".review-modal"),t=document.querySelector(".review-btn"),l=()=>{c.classList.toggle("-hidden")};e.addEventListener("click",(e=>{"svg"===e.target.nodeName&&l()})),t.addEventListener("click",l)}},e=>{e(e.s=538)}]);
+//# sourceMappingURL=modalReview.bundle.js.map

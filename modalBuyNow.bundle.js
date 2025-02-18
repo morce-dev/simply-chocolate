@@ -1,0 +1,2 @@
+(self.webpackChunksimply_chocolate=self.webpackChunksimply_chocolate||[]).push([[898],{693:()=>{const e=document.querySelectorAll(".buy-btn"),c=document.querySelector(".buy-now-modal"),l=document.querySelector(".close-buy-modal"),t=()=>{c.classList.toggle("-hidden")};e[0].addEventListener("click",t),e[1].addEventListener("click",t),l.addEventListener("click",t)}},e=>{e(e.s=693)}]);
+//# sourceMappingURL=modalBuyNow.bundle.js.map

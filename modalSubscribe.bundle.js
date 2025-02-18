@@ -1,0 +1,2 @@
+(self.webpackChunksimply_chocolate=self.webpackChunksimply_chocolate||[]).push([[190],{712:()=>{const e=document.querySelector(".subscribe-btn"),c=document.querySelector(".subscribe-modal"),s=document.querySelector(".close-subscribe-modal"),l=()=>{c.classList.toggle("-hidden")};e.addEventListener("click",l),s.addEventListener("click",l)}},e=>{e(e.s=712)}]);
+//# sourceMappingURL=modalSubscribe.bundle.js.map
