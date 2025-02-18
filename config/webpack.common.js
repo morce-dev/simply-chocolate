@@ -9,6 +9,9 @@ module.exports = {
     app: "./src/index.js",
     swiper: "./src/swiper.js",
     swiperReview: "./src/swiper-review.js",
+    modalReview: "./src/modal-review.js",
+    modalSubscribe: "./src/modal-subscribe.js",
+    modalBuyNow: "./src/modal-buy-now.js",
   },
   plugins: [
     new HtmlWebpackPlugin({

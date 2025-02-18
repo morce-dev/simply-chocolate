@@ -1,0 +1,108 @@
+.review-modal.-hidden {
+  display: none;
+}
+
+.review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+
+  width: 311px;
+  height: 471px;
+  padding: 32px 24px;
+
+  border-radius: 15px;
+  background-color: white;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.review-form > .review-title {
+  width: 255px;
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.review-form span {
+  color: var(--orange);
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 14px 18px;
+  resize: none;
+}
+
+.close-review-modal {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+
+  stroke: black;
+}
+
+.close-review-modal:hover {
+  stroke: var(--orange);
+  cursor: pointer;
+  transition: stroke 100ms linear;
+}
+
+.review-form-btn {
+  padding: 12px 28px;
+  border-radius: 100px;
+  background-color: var(--orange);
+  color: white;
+}
+
+.review-form-btn:hover {
+  background-color: var(--hover);
+  color: var(--orange);
+  transition: background-color 100ms linear, color 100ms linear;
+}
+
+.review-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.review-input-wrapper > span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  color: black;
+  gap: 8px;
+}
+
+.review-input-wrapper > p {
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
+
+.review-input-wrapper > span::after {
+  content: "";
+  height: 20px;
+  border: 1px solid rgba(64, 64, 64, 0.3);
+}
+
+.review-input-wrapper > .review-phone-input {
+  padding-left: 110px;
+}

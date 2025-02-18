@@ -1,0 +1,92 @@
+.subscribe-modal.-hidden {
+  display: none;
+}
+
+.subscribe-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  z-index: 1;
+  width: 311px;
+  height: 350px;
+  border-radius: 15px;
+
+  background-color: white;
+  overflow: hidden;
+}
+
+.subscribe-form > .subscribe-title {
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.subscribe-form span {
+  color: var(--orange);
+}
+
+.subscribe-form input {
+  margin-bottom: 32px;
+  width: 263px;
+  /* padding: 14px 18px; */
+  border-radius: 25px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+  padding-right: 115px;
+}
+
+.close-subscribe-modal {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+
+  stroke: white;
+}
+
+.close-subscribe-modal:hover {
+  stroke: var(--orange);
+  cursor: pointer;
+  transition: stroke 100ms linear;
+}
+
+.subscribe-form-send {
+  position: absolute;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 14px 28px;
+
+  background-color: var(--orange);
+  color: white;
+  border-radius: 100px;
+}
+
+.subscribe-form-send:hover {
+  background-color: var(--hover);
+  color: var(--orange);
+  transition: background-color 100ms linear, color 100ms linear;
+}
+
+.subscribe-form > .subscribe-modal-input-wrapper {
+  position: relative;
+  display: flex;
+}

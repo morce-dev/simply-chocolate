@@ -31,6 +31,12 @@
   border: 1px solid #fd9222;
 }
 
+.reviews > .review-btn:hover {
+  background-color: var(--orange);
+  color: white;
+  transition: background-color 100ms linear, color 100ms linear;
+}
+
 .review-swiper-pagination {
   position: static;
   display: flex;

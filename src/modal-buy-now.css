@@ -1,0 +1,198 @@
+.buy-now-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+
+  padding: 32px 24px;
+  margin: auto;
+  width: 311px;
+  height: 90%;
+
+  border-radius: 15px;
+  background-color: inherit;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.buy-now-modal.-hidden {
+  display: none;
+}
+
+.buy-now-modal > .buy-now-title {
+  margin-bottom: 32px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.buy-now-title > span {
+  color: var(--orange);
+}
+
+.buy-now-modal > .buy-now-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-choco > .item-button {
+  display: flex;
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-weight: 600;
+
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
+}
+
+.choco-list > .item-choco {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+
+  padding: 8px 16px;
+  margin: auto;
+
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+}
+
+.choco-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.item-choco:first-child > .chocho-img {
+  background-image: url("./assets/images/choco-curl.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 84px;
+  height: 69px;
+}
+
+.item-choco:nth-child(2) > .chocho-img {
+  background-image: url("./assets/images/choco-stack.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 84px;
+  height: 69px;
+}
+
+.item-choco:last-child > .chocho-img {
+  background-image: url("./assets/images/choco-bar-cut.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 84px;
+  height: 69px;
+}
+
+.buy-now-form .buy-input {
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+
+.buy-now-form > .buy-input:first-of-type {
+  margin-bottom: 14px;
+}
+
+.buy-now-form > .label-text {
+  margin-bottom: 8px;
+}
+
+.buy-now-form > .buy-comment {
+  padding: 14px 18px 60px 18px;
+
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+}
+
+.buy-now-button {
+  position: relative;
+  border-radius: 100px;
+  width: 109px;
+  background-color: var(--orange);
+  padding: 12px 28px;
+  color: white;
+  margin-top: 14px;
+}
+
+.buy-now-button:hover {
+  background-color: var(--hover);
+  color: var(--orange);
+  transition: background-color 100ms linear, color 100ms linear;
+}
+
+.buy-now-modal > .close-buy-modal {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  stroke: black;
+}
+
+.buy-now-modal > .close-buy-modal:hover {
+  cursor: pointer;
+  stroke: var(--orange);
+  transition: stroke 100ms linear;
+}
+
+.label-input-phone-wrapper {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+}
+
+.label-input-phone-wrapper > span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 18px;
+  margin-top: 14px;
+}
+
+.label-input-phone-wrapper > span::after {
+  content: "";
+  border: 1px solid rgba(64, 64, 64, 0.3);
+  height: 20px;
+}
+
+.label-input-card-wrapper {
+  position: relative;
+}
+
+.label-input-phone-wrapper > .buy-input {
+  padding-left: 100px;
+  width: 100%;
+}
+
+.label-input-card-wrapper > span {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+}
+
+.label-input-card-wrapper > .buy-input {
+  width: 100%;
+  padding-right: 50px;
+}
