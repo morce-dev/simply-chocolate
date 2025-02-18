@@ -793,235 +793,241 @@
         </ul>
       </div>
     </nav>
-    <div class="buy-now-modal -hidden">
-      <span class="close-buy-modal"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M18 6 6 18M6 6l12 12"
-          /></svg
-      ></span>
-      <p class="buy-now-title"><span>Buy</span> now</p>
-      <ul class="choco-list">
-        <li class="item-choco">
-          <div class="chocho-img"></div>
-          <button class="item-button" type="button">100 g</button>
-        </li>
-        <li class="item-choco">
-          <div class="chocho-img"></div>
-          <button class="item-button" type="button">200 g</button>
-        </li>
-        <li class="item-choco">
-          <div class="chocho-img"></div>
-          <button class="item-button" type="button">300 g</button>
-        </li>
-      </ul>
-      <form class="buy-now-form">
-        <label class="label-text">Personal information</label>
-        <input
-          class="buy-input"
-          type="text"
-          name="name"
-          id="name-buy"
-          placeholder="Name"
-        />
-        <input
-          class="buy-input"
-          type="text"
-          name="surname"
-          id="surname-buy"
-          placeholder="Surname"
-        />
-        <label class="label-text">Email</label>
-        <input
-          class="buy-input"
-          type="email"
-          name="surname"
-          id="surname-buy"
-          placeholder="Enter your email"
-        />
-        <label class="label-text">Phone number</label>
-        <div class="label-input-phone-wrapper">
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="19"
-              fill="none"
-            >
-              <g clip-path="url(#a)">
-                <path fill="gold" d="M23.874.294H.182v17.631h23.692V.294Z" />
-                <path
-                  fill="#0057B7"
-                  fill-rule="evenodd"
-                  d="M.182.294h23.692V9.11H.182V.294Z"
-                  clip-rule="evenodd"
-                />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 .1h24v18H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-            <p>+380</p></span
+    <div class="modal-wrapper">
+      <div class="buy-now-modal -hidden">
+        <span class="close-buy-modal"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
           >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 6 6 18M6 6l12 12"
+            /></svg
+        ></span>
+        <p class="buy-now-title"><span>Buy</span> now</p>
+        <ul class="choco-list">
+          <li class="item-choco">
+            <div class="chocho-img"></div>
+            <button class="item-button" type="button">100 g</button>
+          </li>
+          <li class="item-choco">
+            <div class="chocho-img"></div>
+            <button class="item-button" type="button">200 g</button>
+          </li>
+          <li class="item-choco">
+            <div class="chocho-img"></div>
+            <button class="item-button" type="button">300 g</button>
+          </li>
+        </ul>
+        <form class="buy-now-form">
+          <label class="label-text">Personal information</label>
           <input
             class="buy-input"
-            type="tel"
-            name="phone"
-            id="phone-buy"
-            placeholder="Phone number"
-          />
-        </div>
-        <label class="label-text">Card number</label>
-        <div class="label-input-card-wrapper">
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="14"
-              fill="none"
-            >
-              <path
-                fill="#ED0006"
-                fill-rule="evenodd"
-                d="M11 12.284a6.759 6.759 0 0 1-4.317 1.54C3.008 13.823.03 10.937.03 7.38S3.008.938 6.683.938c1.648 0 3.155.579 4.317 1.539a6.759 6.759 0 0 1 4.317-1.54c3.675 0 6.654 2.885 6.654 6.443s-2.979 6.443-6.654 6.443A6.759 6.759 0 0 1 11 12.284Z"
-                clip-rule="evenodd"
-              />
-              <path
-                fill="#F9A000"
-                fill-rule="evenodd"
-                d="M11 12.284c1.43-1.182 2.338-2.94 2.338-4.904 0-1.963-.907-3.722-2.338-4.903a6.759 6.759 0 0 1 4.317-1.54c3.675 0 6.654 2.885 6.654 6.443s-2.979 6.443-6.654 6.443A6.759 6.759 0 0 1 11 12.284Z"
-                clip-rule="evenodd"
-              />
-              <path
-                fill="#FF5E00"
-                fill-rule="evenodd"
-                d="M11 12.284c1.43-1.182 2.338-2.94 2.338-4.904 0-1.963-.907-3.722-2.338-4.903-1.43 1.181-2.338 2.94-2.338 4.903 0 1.964.907 3.722 2.338 4.904Z"
-                clip-rule="evenodd"
-              /></svg
-          ></span>
-          <input
-            class="buy-input number"
             type="text"
-            name="card number"
-            id="buy-card-number"
-            placeholder="Enter card"
+            name="name"
+            id="name-buy"
+            placeholder="Name"
           />
-        </div>
-        <label class="label-text">Comment</label>
-        <textarea
-          class="buy-comment"
-          name="buy-comment"
-          id="buy-comment"
-          rows="3"
-          placeholder="Enter text"
-        ></textarea>
-        <button class="buy-now-button" type="button">Submit</button>
-      </form>
-    </div>
-    <div class="review-modal -hidden">
-      <span class="close-review-modal">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M18 6 6 18M6 6l12 12"
-          />
-        </svg>
-      </span>
-      <form class="review-form">
-        <p class="review-title">
-          Leave a review <br />about <span>our chocolate</span>
-        </p>
-        <input type="text" name="" id="" placeholder="Name" />
-        <input type="email" name="" id="" placeholder="Enter your email" />
-        <div class="review-input-wrapper">
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="19"
-              fill="none"
-            >
-              <g clip-path="url(#a)">
-                <path fill="gold" d="M23.874.294H.182v17.631h23.692V.294Z" />
-                <path
-                  fill="#0057B7"
-                  fill-rule="evenodd"
-                  d="M.182.294h23.692V9.11H.182V.294Z"
-                  clip-rule="evenodd"
-                />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 .1h24v18H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="tel">+380</p></span
-          >
           <input
-            class="review-phone-input"
-            type="tel"
-            name=""
-            id=""
-            placeholder="Phone number"
+            class="buy-input"
+            type="text"
+            name="surname"
+            id="surname-buy"
+            placeholder="Surname"
           />
-        </div>
-        <textarea name="" id="" rows="3" placeholder="Enter text"></textarea>
-        <button class="review-form-btn" type="button">Send</button>
-      </form>
-    </div>
-    <div class="subscribe-modal -hidden">
-      <span class="close-subscribe-modal">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M18 6 6 18M6 6l12 12"
-          />
-        </svg>
-      </span>
-      <img
-        src="<%= require('./assets/images/subscribe-choco.jpg')%>"
-        alt="chocolate"
-      />
-      <form class="subscribe-form">
-        <p class="subscribe-title">
-          Explore our <br /><span>new chocolate</span> first!
-        </p>
-        <div class="subscribe-modal-input-wrapper">
+          <label class="label-text">Email</label>
           <input
-            class="subscribe-form"
+            class="buy-input"
             type="email"
-            name="email"
-            id="subscribe-email-input"
+            name="surname"
+            id="surname-buy"
             placeholder="Enter your email"
           />
-          <button class="subscribe-form-send" type="button">Submit</button>
-        </div>
-      </form>
+          <label class="label-text">Phone number</label>
+          <div class="label-input-phone-wrapper">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="19"
+                fill="none"
+              >
+                <g clip-path="url(#a)">
+                  <path fill="gold" d="M23.874.294H.182v17.631h23.692V.294Z" />
+                  <path
+                    fill="#0057B7"
+                    fill-rule="evenodd"
+                    d="M.182.294h23.692V9.11H.182V.294Z"
+                    clip-rule="evenodd"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .1h24v18H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>+380</p></span
+            >
+            <input
+              class="buy-input"
+              type="tel"
+              name="phone"
+              id="phone-buy"
+              placeholder="Phone number"
+            />
+          </div>
+          <label class="label-text">Card number</label>
+          <div class="label-input-card-wrapper">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="14"
+                fill="none"
+              >
+                <path
+                  fill="#ED0006"
+                  fill-rule="evenodd"
+                  d="M11 12.284a6.759 6.759 0 0 1-4.317 1.54C3.008 13.823.03 10.937.03 7.38S3.008.938 6.683.938c1.648 0 3.155.579 4.317 1.539a6.759 6.759 0 0 1 4.317-1.54c3.675 0 6.654 2.885 6.654 6.443s-2.979 6.443-6.654 6.443A6.759 6.759 0 0 1 11 12.284Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="#F9A000"
+                  fill-rule="evenodd"
+                  d="M11 12.284c1.43-1.182 2.338-2.94 2.338-4.904 0-1.963-.907-3.722-2.338-4.903a6.759 6.759 0 0 1 4.317-1.54c3.675 0 6.654 2.885 6.654 6.443s-2.979 6.443-6.654 6.443A6.759 6.759 0 0 1 11 12.284Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="#FF5E00"
+                  fill-rule="evenodd"
+                  d="M11 12.284c1.43-1.182 2.338-2.94 2.338-4.904 0-1.963-.907-3.722-2.338-4.903-1.43 1.181-2.338 2.94-2.338 4.903 0 1.964.907 3.722 2.338 4.904Z"
+                  clip-rule="evenodd"
+                /></svg
+            ></span>
+            <input
+              class="buy-input number"
+              type="text"
+              name="card number"
+              id="buy-card-number"
+              placeholder="Enter card"
+            />
+          </div>
+          <label class="label-text">Comment</label>
+          <textarea
+            class="buy-comment"
+            name="buy-comment"
+            id="buy-comment"
+            rows="3"
+            placeholder="Enter text"
+          ></textarea>
+          <button class="buy-now-button" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-wrapper">
+      <div class="review-modal -hidden">
+        <span class="close-review-modal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 6 6 18M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <form class="review-form">
+          <p class="review-title">
+            Leave a review <br />about <span>our chocolate</span>
+          </p>
+          <input type="text" name="" id="" placeholder="Name" />
+          <input type="email" name="" id="" placeholder="Enter your email" />
+          <div class="review-input-wrapper">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="19"
+                fill="none"
+              >
+                <g clip-path="url(#a)">
+                  <path fill="gold" d="M23.874.294H.182v17.631h23.692V.294Z" />
+                  <path
+                    fill="#0057B7"
+                    fill-rule="evenodd"
+                    d="M.182.294h23.692V9.11H.182V.294Z"
+                    clip-rule="evenodd"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 .1h24v18H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="tel">+380</p></span
+            >
+            <input
+              class="review-phone-input"
+              type="tel"
+              name=""
+              id=""
+              placeholder="Phone number"
+            />
+          </div>
+          <textarea name="" id="" rows="3" placeholder="Enter text"></textarea>
+          <button class="review-form-btn" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-wrapper">
+      <div class="subscribe-modal -hidden">
+        <span class="close-subscribe-modal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 6 6 18M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <img
+          src="<%= require('./assets/images/subscribe-choco.jpg')%>"
+          alt="chocolate"
+        />
+        <form class="subscribe-form">
+          <p class="subscribe-title">
+            Explore our <br /><span>new chocolate</span> first!
+          </p>
+          <div class="subscribe-modal-input-wrapper">
+            <input
+              class="subscribe-form"
+              type="email"
+              name="email"
+              id="subscribe-email-input"
+              placeholder="Enter your email"
+            />
+            <button class="subscribe-form-send" type="button">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

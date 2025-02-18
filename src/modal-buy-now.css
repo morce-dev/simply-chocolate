@@ -13,7 +13,7 @@
   height: 90%;
 
   border-radius: 15px;
-  background-color: inherit;
+  background-color: var(--background);
   overflow: auto;
   scrollbar-width: thin;
 }
