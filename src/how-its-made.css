@@ -80,6 +80,15 @@
   background-image: url("./assets/images/how-its-made.webp");
 }
 
+.video-wrapper > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .video-container > .video-wrapper:hover,
 .video-container > .video-wrapper:focus {
   transition: display 100ms linear;

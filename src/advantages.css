@@ -2,7 +2,7 @@
   margin-top: 71px;
   background-color: var(--color1);
   width: 375px;
-  height: 758px;
+  /* height: 758px; */
   padding: 20px;
 }
 
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  height: 718px;
+  /* height: 718px; */
 }
 
 .list-advantages > li {
