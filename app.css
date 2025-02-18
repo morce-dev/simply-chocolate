@@ -379,6 +379,20 @@ footer {
   transition: color 100ms linear, border-color 100ms linear;
 }
 
+.modal-wrapper.blur-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -1453,7 +1467,7 @@ span.swiper-pagination-bullet {
   height: 90%;
 
   border-radius: 15px;
-  background-color: inherit;
+  background-color: var(--background);
   overflow: auto;
   scrollbar-width: thin;
 }
