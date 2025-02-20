@@ -39,3 +39,12 @@ const scrollToSection = (event) => {
 menuToggle.addEventListener("click", toggleMenu);
 closeMenu.addEventListener("click", toggleMenu);
 navMenuList.addEventListener("click", scrollToSection);
+
+const onBackDropClick = (event) => {
+  if (event.target.classList.contains("nav-mobile")) {
+    toggleMenu();
+  }
+  return;
+};
+
+window.addEventListener("click", onBackDropClick);
