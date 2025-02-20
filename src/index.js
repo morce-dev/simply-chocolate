@@ -10,7 +10,7 @@ import "./review.css";
 import "./subscribe.css";
 import "./footer.css";
 import "./modal-subscribe.css";
-import "./review-modal.css";
+import "./modal-review.css";
 import "./modal-buy-now.css";
 
 const bodyScrollLock = require("body-scroll-lock");

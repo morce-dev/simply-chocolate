@@ -5,8 +5,18 @@ const modalWrapper = document.querySelector(".modal-wrapper");
 
 const toggleSubscribeModal = () => {
   subscribeModal.classList.toggle("-hidden");
-  modalWrapper.classList.toggle("blur-modal");
+  modalWrapper.classList.toggle("blur-modal-subscribe");
 };
 
 subscribeBtn.addEventListener("click", toggleSubscribeModal);
 closeSubscribeModal.addEventListener("click", toggleSubscribeModal);
+
+const onBackdropClick = (event) => {
+  if (event.target.classList.contains("blur-modal-subscribe")) {
+    toggleSubscribeModal();
+  }
+
+  return;
+};
+
+window.addEventListener("click", onBackdropClick);
