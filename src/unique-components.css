@@ -113,6 +113,8 @@
 
   transform: rotateY(180deg);
 
+  background-color: white;
+
   backface-visibility: hidden;
 }
 
@@ -126,9 +128,6 @@
 
 .card-container > .unique-card:hover {
   transform: rotateY(180deg);
-
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
 }
 
 .back-card > .title-back-card {
